@@ -1,0 +1,14 @@
+.div-container {
+  outline: auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 960px;
+}
+.row {
+  display: flex;
+}
+.sketch {
+  width: 20px;
+  height: 20px;
+  outline: auto;
+}
