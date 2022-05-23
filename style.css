@@ -1,14 +1,25 @@
 .div-container {
-  outline: auto;
   display: flex;
   flex-direction: column;
-  max-width: 960px;
+  max-width: 560px;
 }
 .row {
   display: flex;
+  flex: 1;
 }
 .sketch {
-  width: 20px;
-  height: 20px;
-  outline: auto;
+  border: 1px solid #ccc;
 }
+
+.sketch:hover {
+  /* background-color: rebeccapurple; */
+  background-color: black;
+}
+
+.my-color-class {
+  background-color: black;
+}
+
+/* .sketch :hover {
+  background-color: aliceblue;
+} */
