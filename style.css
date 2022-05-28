@@ -1,13 +1,34 @@
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Courier New", Courier, monospace;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  padding: 12px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1%;
+}
+
 .div-container {
   display: flex;
   flex-direction: column;
-  max-width: 560px;
+  align-items: center;
+  width: 560px;
+  height: 560px;
 }
 .row {
   display: flex;
   flex: 1;
 }
 .sketch {
+  box-sizing: border-box;
   border: 1px solid #ccc;
 }
 
@@ -20,6 +41,34 @@
   background-color: black;
 }
 
-/* .sketch :hover {
+.options {
   background-color: aliceblue;
-} */
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  margin: 12px;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.slidecontainer {
+  /* width: 100%; Width of the outside container */
+  width: 100%;
+  margin: 12px;
+}
+
+.slider {
+  -webkit-appearance: none; /* Override default CSS styles */
+  appearance: none;
+  width: 20%; /* Full-width */
+  height: 10px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
+  transition: opacity 0.2s;
+}
+
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
